@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "commit": "git cz"
   },
   "repository": "https://github.com/edwinlab/chat-api.git",
   "author": "Edwin Andrianto",
