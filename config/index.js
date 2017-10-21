@@ -1,5 +1,7 @@
 const serverConfig = require('./server')();
+const databaseConfig = require('./database')();
 
 module.exports = {
-  server: serverConfig
+  server: serverConfig,
+  database: databaseConfig,
 };
