@@ -1,7 +1,6 @@
 module.exports = () => {
-  // Default to dev presets
   const serverConfig = {
-    port: 3000,
+    port: process.env.PORT || 3000,
   };
 
   switch (process.env.NODE_ENV) {

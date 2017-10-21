@@ -11,6 +11,7 @@ module.exports = () => {
 
   switch (process.env.NODE_ENV) {
     case 'production':
+      dbConfig.url = process.env.MONGODB_URL;
       break;
     case 'stage':
       break;
