@@ -2,6 +2,7 @@ const Koa = require('koa');
 const logger = require('koa-logger');
 const mongoose = require('mongoose');
 const bodyParser = require('koa-bodyparser');
+const cors = require('kcors');
 const routes = require('./routes');
 const config = require('./config');
 
@@ -12,6 +13,7 @@ mongoose.Promise = global.Promise;
 mongoose.connect(config.database.url, config.database.opts);
 
 const app = new Koa()
+  .use(cors())
   .use(logger())
   .use(bodyParser())
   .use(routes.routes())
