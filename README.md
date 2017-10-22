@@ -43,6 +43,19 @@ curl -X POST \
   https://oy-chat-api.herokuapp.com/login
 ```
 
+#### Blast
+This endpoint is used to blast message.
+
+```
+POST /blast - Blast message
+
+# curl(1) test, copy & paste this on your terminal
+curl -X POST \
+  -H 'Content-Type: application/json' \
+  -d '{"message":"test"}' \
+  https://oy-chat-api.herokuapp.com/blast
+```
+
 ## Contributing
 How to contributing for this project
 
